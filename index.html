@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <style>
+      /* Center align the iframe */
+      .iframe-container {
+        display: flex;
+  justify-content: center; /* Center align horizontally */
+  align-items: center; /* Center align vertically */
+  height: 100vh; 
+  background: #ea7070;
+      }
+      .iframe-container iframe {
+        width: 50%; /* Adjusted width */
+        /* Fixed height */
+        height: 80%;
+       
+        border: 1px solid #ccc;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <div class="iframe-container">
+      <iframe 
+        allow="microphone;"
+        src="https://console.dialogflow.com/api-client/demo/embedded/d26cb9f6-8fe0-4505-aa7d-4568a37b83b7">
+      </iframe>
+    </div>
+  </body>
+</html>
